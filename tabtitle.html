@@ -1,15 +1,10 @@
 <html>
 <head>
 	<title>Anything</title>
-	<script>
-		function changeIt(inpt) {
-			document.title = inpt;
-		}
-	</script>
 </head>
 <body>
 	<input type="text" id="inpt" autofocus />
-	<input type="button" id="sbmt" onclick="changeIt(document.getElementById('inpt').value)" value="Submit" />
+	<input type="button" id="sbmt" onclick="document.title=document.getElementById('inpt').value" value="Submit" />
 	<script>
 		document.getElementById("inpt")
 			.addEventListener("keyup", function(event) {
